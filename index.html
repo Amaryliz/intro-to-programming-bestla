@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <h1>Amaryliz Figueroa</h1>
- lesson-4-2
+
     <section>
       <h2 class="sub-heading">About</h2>
       <p>
@@ -23,7 +23,7 @@
       </p>
     </section>
     <section>
-      <h2 class="sub-headind">Experience</h2>
+      <h2 class="sub-heading">Experience</h2>
       <p>
         I have worked in customer service for most of my life, but I have made a
         couple of projects since I have started my journey. Here are just a
@@ -47,26 +47,6 @@
     </section>
 
     <section>
-      <h2 class="sub-headind">Experience</h2>
-      <p>
-        I have worked in customer service for most of my life, but I have made a
-        couple of projects since I have started my journey. Here are just a
-        couple!
-      </p>
-      <p>
-        This is my first website I created by myself, and of course it was about
-        Disney! Click
-        <a href="https://disney-trip-5w2v.netlify.app/"> HERE </a> to view
-      </p>
-      <p>
-        This was a website that I created with a group, it was a lot of fun to
-        code with others! Click
-        <a href="https://lyndsey-scott-9w2d.netlify.app/"> HERE </a> to view
-      </p>
-    </section>
-
-    <section>
- main
       <h2 class="sub-heading">Connect</h2>
       <p>If you would like to connect just hit one of the links below</p>
       <a href="https://www.linkedin.com/in/amaryliz-figueroa-a644441b8/"
@@ -74,12 +54,33 @@
       >
       <a href="https://github.com/Amaryliz">Github</a>
     </section>
- lesson-4-2
+
+    <section>
+      <h2>Leave a Message</h2>
+      <form action="index.html" method="post" name="leave_message">
+        <label for="name">Name:</label>
+        <input id="name" type="text" name="name" required="true" />
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" name="email" required="true" />
+
+        <br />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required="true"></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section id="message_list">
+      <h2>Messages</h2>
+
+      <ul></ul>
+    </section>
 
     <footer></footer>
 
     <script src="js/index.js"></script>
-
- main
   </body>
 </html>
