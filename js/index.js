@@ -15,9 +15,11 @@ for(let i = 0; i < skills.length; i++){
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
+// style skills section
+skillsSection.style.color = "#C6A944";
+skillsList.style.color = "#ffffff"
 
 //message form section
-
 const messageForm = document.getElementsByName('leave_message')[0];
 messageForm.addEventListener('submit', (e) =>{
     e.preventDefault();
@@ -39,5 +41,19 @@ messageForm.addEventListener('submit', (e) =>{
     })
     newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
+
+    // style message section
+    messageList.style.color = '#ffffff';
+    messageList.style.letterSpacing = '1px';
+    
+    // button style
+    removeButton.style.background = '#8DAC69';
+    removeButton.style.color = '#ffffff';
+    removeButton.style.borderRadius = '5px';
+    removeButton.style.borderColor = '#8DAC69';
+    removeButton.style.marginLeft = '5px';
+    removeButton.style.padding = '3px';
+
+
     messageForm.reset();
 });
