@@ -1,26 +1,49 @@
+* {
+box-sizing: border-box;
+}
+
 body {
     color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: #B2D66F;
     font-size: 17px;
+    margin: 50px;
+    letter-spacing: 0.5px;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #774936;
 }
 
 h1 {
     color: #fdfcdc;
     text-align: center;
     font-size: 50px;
+    padding: 5px;
 }
 
 img {
     height: 200px;
     width: 150px;
-    margin-left: 70px;
+    margin-left: 10px;
+    margin-top: 5px;
     border-radius: 50%; 
     border: dotted 
 }
 
+#about {
+    margin-left: 25px;
+}
+
 h2 {
     font-size: 25px;
+}
+
+.sub-heading {
+    color: #C6A944;
 }
 
 section {
@@ -34,6 +57,24 @@ li {
     letter-spacing: 1px;
     margin-left: 20px;
     padding-bottom: 5px;
+}
+
+li:before {
+    content: "\2728";
+    margin-right: 10px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.projects:before {
+    content: "\1F4BB";
+    margin-right: 10px;
 }
 
 input {
@@ -51,8 +92,9 @@ textarea {
 
 footer {
     background-color: #a7c957;
-    color: #d9ed92;
+    color: #774936;
     padding: 10PX;
+    padding-bottom: 20px;
     border-radius: 2px;
 }
 
@@ -67,34 +109,57 @@ footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-li:before {
-    content: "\2728";
-    margin-right: 10px;
-}
-
-.projects:before {
-    content: "\1F4BB";
-    margin-right: 10px;
-}
-
-.sub-heading {
-    color: #C6A944;
-}
-
 .links {
     color: #7F542C
 }
 
-@media (max-width:500px) {
+#top-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:600px) {
     body {
         font-size: 1em;
+        margin: 2em;
     }
-
     h1 {
         font-size: 3em;
         color: #fefae0;
     }
     img {
         margin-left: 1em;
+        margin-top: 5em;
     }
+   li:before {
+        margin: 1px;
+   }  
+   form {
+        display: flex;
+        flex-direction: column;
+   } 
+   label{
+    display: flex;
+    flex-direction: column;
+   }
+   input {
+        border-radius: 0.5em;
+        margin-left: 5em;
+        margin-right: 10em;
+        display: flex;
+        flex-direction: column;
+   } 
+   textarea {
+        border-radius: 0.5em;
+        margin-left: 5em;
+        margin-right: 10em;
+        display: flex;
+        flex-direction: column;
+   }
+   #submit {
+        margin-left: 12em;
+        margin-right: 10em;
+   }
+
 }
+
