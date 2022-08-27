@@ -7,7 +7,7 @@ copyright.innerHTML = `Amaryliz Figueroa ${thisYear}`
 footer.appendChild(copyright);
 
 //skills section
-const skills = ['JavaScript', 'HTML', 'CSS'];
+const skills = ['JavaScript', 'HTML', 'CSS', 'Salesforce', 'Facets'];
 let skillsSection = document.getElementById('skills');
 let skillsList = skillsSection.querySelector('ul');
 for(let i = 0; i < skills.length; i++){
@@ -17,7 +17,8 @@ for(let i = 0; i < skills.length; i++){
 }
 // style skills section
 skillsSection.style.color = "#C6A944";
-skillsList.style.color = "#ffffff"
+skillsList.style.color = "#ffffff";
+
 
 //message form section
 const messageForm = document.getElementsByName('leave_message')[0];
@@ -45,6 +46,8 @@ messageForm.addEventListener('submit', (e) =>{
     // style message section
     messageList.style.color = '#ffffff';
     messageList.style.letterSpacing = '1px';
+    messageList.style.display = 'flex';
+    messageList.style.flexDirection = 'column'
     
     // button style
     removeButton.style.background = '#8DAC69';
