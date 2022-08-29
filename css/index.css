@@ -59,24 +59,6 @@ li {
     padding-bottom: 5px;
 }
 
-li:before {
-    content: "\2728";
-    margin-right: 10px;
-}
-
-.projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-top: 5px;
-    padding-bottom: 7px;
-}
-
-.projects:before {
-    content: "\1F4BB";
-    margin-right: 10px;
-}
-
 input {
     margin-bottom: 10px;
     margin-left: 20px;
@@ -92,10 +74,13 @@ textarea {
 
 footer {
     background-color: #a7c957;
-    color: #774936;
+    color: #d9ed92;
     padding: 10PX;
     padding-bottom: 20px;
     border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #submit {
@@ -118,7 +103,15 @@ footer {
     flex-direction: row;
 }
 
-@media (max-width:600px) {
+.sub-heading {
+    color: #C6A944;
+}
+
+.links {
+    color: #7F542C
+}
+
+@media (max-width:500px) {
     body {
         font-size: 1em;
         margin: 2em;
