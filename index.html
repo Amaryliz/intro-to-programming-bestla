@@ -8,29 +8,58 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <h1>Amaryliz Figueroa</h1>
-    <img src="images/mainpic.JPG" alt="" />
+    <nav>
+      <div id="top"></div>
+      <ul id="nav-bar">
+        <a href="#about" class="links">About</a>
+        <a href="#experience" class="links">Experience</a>
+        <a href="#skills" class="links">Skills</a>
+        <a href="#connect" class="links">Connect</a>
+        <a href="#message" class="links">Message Center</a>
+      </ul>
+    </nav>
 
-    <section>
-      <h2 class="sub-heading">About</h2>
-      <p>
-        My name is Amaryliz Figueroa, and my goal is to become a Software
-        Engineer at Disney! I first became intereseted in become a Software
-        Engineer after I saw someone on TikTok (yes I know, I know) explaining
-        their journey. After that, I kept watching videos about the coding
-        journey, I can honestly say I was hooked one becoming a Software
-        Engineer. I went on Linkedin and found a free eight week long
-        introduction course held by G{Code}. While in G{Code} we were introduced
-        to Code the Dream as a possible next step to help in our coding journey.
-      </p>
+    <h1>Amaryliz Figueroa</h1>
+    <section id="top-container">
+      <img src="images/mainpic.JPG" alt="" />
+      <section id="about">
+        <h2 class="sub-heading">About</h2>
+        <p>
+          My name is Amaryliz Figueroa, and my goal is to become a Software
+          Engineer at Disney! I first became intereseted in become a Software
+          Engineer after I saw someone on TikTok (yes I know, I know) explaining
+          their journey. After that, I kept watching videos about the coding
+          journey, I can honestly say I was hooked one becoming a Software
+          Engineer. I went on Linkedin and found a free eight week long
+          introduction course held by G{Code}. While in G{Code} we were
+          introduced to Code the Dream as a possible next step to help in our
+          coding journey.
+        </p>
+      </section>
     </section>
-    <section>
+
+    <section id="experience">
       <h2 class="sub-heading">Experience</h2>
-      <p>
-        I have worked in customer service for most of my life, but I have made a
-        couple of projects since I have started my journey. Here are just a
-        couple!
-      </p>
+      <ul>
+        <li class="work">
+          <span> <strong>EDI Data Coordinator</strong> -EyeMed </span>
+          <span class="dates"> August 2022 - Present </span>
+        </li>
+        <li class="work">
+          <span>
+            <strong>Patient Care Coordinator</strong> -Freedom Pharmacy
+          </span>
+          <span class="dates"> December 2020 - March 2022 </span>
+        </li>
+        <li class="work">
+          <span>
+            <strong>Financial Representative</strong> -Orlando Health
+          </span>
+          <span class="dates"> February 2020 - December 2020 </span>
+        </li>
+      </ul>
+      <h2 class="sub-heading">Projects</h2>
+
       <ul>
         <li class="projects">
           My solo project on<a
@@ -55,7 +84,7 @@
       <ul></ul>
     </section>
 
-    <section>
+    <section id="connect">
       <h2 class="sub-heading">Connect</h2>
       <p>If you would like to connect just hit one of the links below</p>
       <a
@@ -66,23 +95,17 @@
       <a class="links" href="https://github.com/Amaryliz">Github</a>
     </section>
 
-    <section>
+    <section id="message">
       <h2 class="sub-heading">Leave a Message</h2>
       <form action="index.html" method="post" name="leave_message">
         <label for="name">Name:</label>
         <input id="name" type="text" name="name" required="true" />
 
-        <br />
-
         <label for="email">Email:</label>
         <input id="email" type="email" name="email" required="true" />
 
-        <br />
-
         <label for="message">Message:</label>
         <textarea id="message" name="message" required="true"></textarea>
-
-        <br />
 
         <button id="submit" type="submit">Submit</button>
       </form>
@@ -94,7 +117,9 @@
       <ul></ul>
     </section>
 
-    <footer></footer>
+    <footer>
+      <button id="top-btn"><a id="top-aid" href="#top">To the top</a></button>
+    </footer>
 
     <script src="js/index.js"></script>
   </body>
