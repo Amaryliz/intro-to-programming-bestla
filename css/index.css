@@ -57,6 +57,13 @@ section {
     margin-right: 10px;
 }
 
+li {
+    list-style: none;
+    letter-spacing: 1px;
+    margin-left: 20px;
+    padding-bottom: 5px;
+}
+
 li:before {
     content: "\2728";
     margin-right: 10px;
