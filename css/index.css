@@ -41,6 +41,11 @@ img {
 h2 {
     font-size: 25px;
 }
+#top-btn {
+    border-radius: 75%;
+    border-color: #B4D37A;
+    background-color:#B4D37A ;
+}
 
 .sub-heading {
     color: #C6A944;
@@ -52,11 +57,39 @@ section {
     margin-right: 10px;
 }
 
-li {
-    list-style: none;
-    letter-spacing: 1px;
-    margin-left: 20px;
-    padding-bottom: 5px;
+li:before {
+    content: "\2728";
+    margin-right: 10px;
+}
+
+.projects {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; */
+    padding-top: 5px;
+    padding-bottom: 7px;
+}
+
+.projects:before {
+    content: "\1F4BB";
+    margin-right: 10px;
+}
+
+.work:before {
+    content: none;
+}
+
+.work {
+    background-color: #B3D573;
+    border-radius: 2px;
+    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 input {
@@ -73,8 +106,8 @@ textarea {
 }
 
 footer {
-    background-color: #a7c957;
-    color: #d9ed92;
+    background-color: #B3D573;
+    color: #774936;
     padding: 10PX;
     padding-bottom: 20px;
     border-radius: 2px;
@@ -101,6 +134,9 @@ footer {
 #top-container {
     display: flex;
     flex-direction: row;
+}
+#top-aid {
+    color: #774936;
 }
 
 .sub-heading {
